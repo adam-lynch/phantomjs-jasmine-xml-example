@@ -1,3 +1,14 @@
+# PhantomJS - Jasmine - XML (Example project) [![Build Status](https://travis-ci.org/adam-lynch/phantomjs-jasminexml-example.png)](https://travis-ci.org/adam-lynch/phantomjs-jasminexml-example)
+
+This is a fork of [@detro](https://github.com/detro)'s example project with the added benefit of XML configuration to specify source & test assets, instead of having to manually edit the HTML runner. Also, test assets are loaded with [headjs](http://headjs.com).
+
+See [test/readme](https://github.com/adam-lynch/phantomjs-jasminexml-example/blob/master/test/readme.md) for more details on how to use what I've added.
+
+Original project's readme below...
+
+-----------------------------------------------
+
+
 # PhantomJS - Jasmine XML - Example Project Layout
 
 ## Description

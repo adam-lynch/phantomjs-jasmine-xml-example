@@ -1,29 +1,40 @@
 {
-    "name": "detro/phantomjs-jasminexml-example",
-    "description": "A phantomjs / jasminexml Javascript Testing example",
-    "type": "library",
-    "keywords": [
-        "javascript",
-        "jasmine",
-        "phantomjs",
-        "testing"
-    ],
-    "homepage": "https://github.com/detro/phantomjs-jasminexml-example#readme",
-    "authors": [
-        {
-            "name": "Ivan De Marino",
-            "email": "ivan.de.marino@gmail.com",
-            "role": "lead"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/detro/phantomjs-jasminexml-example/issues"
-    },
-    "bin": [
-        "test/phantomjs_jasminexml_runner.js"
-    ],
-    "config": {
-        "bin-dir": "bin"
-    }
+	"name":        "adam-lynch/phantomjs-jasminexml-example",
+	"description": "A JavaScript unit testing example running Jasmine on PhantomJS",
+	"version":     "0.0.1",
+	"type":        "library",
+	"keywords":    [
+		"javascript",
+		"jasmine",
+		"phantomjs",
+		"testing",
+		"unit testing"
+	],
+	"homepage":    "https://github.com/adam-lynch/phantomjs-jasminexml-example",
+	"authors":     [
+		{
+			"name":     "Adam Lynch",
+			"email":    "contact@adamlynch.ie",
+			"homepage": "https://www.adamlynch.ie",
+			"role":     "lead"
+		},
+		{
+			"name":  "Ivan De Marino",
+			"email": "ivan.de.marino@gmail.com",
+			"role":  "author of original project from which this was forked"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"support":     {
+		"issues": "https://github.com/adam-lynch/phantomjs-jasminexml-example/issues"
+	},
+	"bin":         [
+		"test/config/phantomjs_jasminexml_runner.js"
+	],
+	"config":      {
+		"bin-dir": "bin"
+	}
 }
 

@@ -3,7 +3,7 @@ var htmlrunner,
     page,
     fs;
 
-phantom.injectJs("lib/utils/core.js")
+phantom.injectJs("../util/core.js")
 
 if ( phantom.args.length !== 2 ) {
     console.log("Usage: phantom_test_runner.js HTML_RUNNER RESULT_DIR");
@@ -13,12 +13,11 @@ if ( phantom.args.length !== 2 ) {
     resultdir = phantom.args[1];
     page = require("webpage").create();
     fs = require("fs");
-    
+
     // Echo the output of the tests to the Standard Output
     page.onConsoleMessage = function(msg, source, linenumber) {
         console.log(msg);
     };
-
     page.open(htmlrunner, function(status) {
         if (status === "success") {
             utils.core.waitfor(function() { // wait for this to be true

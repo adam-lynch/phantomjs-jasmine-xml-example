@@ -43,6 +43,7 @@
      *                  "Class init"); default: true
      */
     var PhantomJSReporter =  function(consolidate, useDotNotation) {
+
         this.consolidate = consolidate === jasmine.undefined ? true : consolidate;
         this.useDotNotation = useDotNotation === jasmine.undefined ? true : useDotNotation;
     };  
@@ -189,6 +190,7 @@
             }
             return escapeInvalidXmlChars(fullName);
         },
+
 
         log: function(str) {
             var console = jasmine.getGlobal().console;

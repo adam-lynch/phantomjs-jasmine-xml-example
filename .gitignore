@@ -11,3 +11,4 @@ qrc_*
 *.swp
 *.pyc
 target
+.idea/
