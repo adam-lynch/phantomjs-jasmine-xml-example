@@ -5,7 +5,6 @@
     <load location="config/jasmine/jasmine-html.js"/>
     <load location="config/jasmine.phantomjs-reporter.js"/>
 
-    <load location="bootstrap/*.js" description="anything required set up the test environment, global mocks, etc"/>
     <load location="util/*.js" description="test utils"/>
 
     <load location="../src/*.js" description="source JavaScript files to test"/>
