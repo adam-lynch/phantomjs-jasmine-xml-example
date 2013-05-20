@@ -38,6 +38,10 @@ or
 will launch the tests and, if they all pass, make the mvn build pass.
 If any test fails, the mvn build fails.
 
+##Use with Ant
+    ant -f build.xml
+or just `ant` on its own (if you're within the project root), will run the tests and break the build if they fail.
+
 ## Internals
 Well, explaining the internals of PhantomJS here is pointless, but to understand how
 this works, you need to understand a simple idea: PhantomJS provides a main "Javascript Context"
