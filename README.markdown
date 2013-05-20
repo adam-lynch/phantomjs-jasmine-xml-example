@@ -38,7 +38,7 @@ or
 will launch the tests and, if they all pass, make the mvn build pass.
 If any test fails, the mvn build fails.
 
-##Use with Ant
+## Use with Ant
     ant -f build.xml
 or just `ant` on its own (if you're within the project root), will run the tests and break the build if they fail.
 

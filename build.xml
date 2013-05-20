@@ -14,6 +14,7 @@
     </target>
 
     <target name="javascriptUnitTests">
+        <antcall target="generateHtmlTestRunner"/>
 
         <echo>Executing Jasmine tests on PhantomJS...</echo>
         <exec
@@ -21,8 +22,18 @@
                 dir="${testingDirectory}">
 
             <arg value="config/phantomjs_jasminexml_runner.js"/>
-            <arg value="test_runner.html"/>
+            <arg value="test-runner.html"/>
             <arg value="results"/>
+        </exec>
+    </target>
+
+    <target name="generateHtmlTestRunner">
+        <echo>Generating HTML test runner...</echo>
+        <exec
+                executable="php"
+                dir="${testingDirectory}">
+
+            <arg value="writeTestRunnerFile.php"/>
         </exec>
     </target>
 </project>
