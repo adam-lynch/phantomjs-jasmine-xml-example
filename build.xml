@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<project name="phantomjs-jasmine-xml-example" default="init" basedir=".">
+    <description>
+        PhantomJS - Jasmine XML - Example Project Layout
+    </description>
+
+    <!-- set global properties for this build here -->
+    <property environment="env"/>
+    <property name="testingDirectory" value="${basedir}/test"/>
+
+    <target name="init">
+        <antcall target="javascriptUnitTests"/>
+    </target>
+
+    <target name="javascriptUnitTests">
+        <antcall target="generateHtmlTestRunner"/>
+
+        <echo>Executing Jasmine tests on PhantomJS...</echo>
+        <exec
+                executable="phantomjs"
+                dir="${testingDirectory}">
+
+            <arg value="config/phantomjs_jasminexml_runner.js"/>
+            <arg value="test-runner.html"/>
+            <arg value="results"/>
+        </exec>
+    </target>
+
+    <target name="generateHtmlTestRunner">
+        <echo>Generating HTML test runner...</echo>
+        <exec
+                executable="php"
+                dir="${testingDirectory}">
+
+            <arg value="writeTestRunnerFile.php"/>
+        </exec>
+    </target>
+</project>
