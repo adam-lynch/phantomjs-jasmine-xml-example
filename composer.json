@@ -1,5 +1,5 @@
 {
-	"name":        "adam-lynch/phantomjs-jasminexml-example",
+	"name":        "adam-lynch/phantomjs-jasmine-xml-example",
 	"description": "A JavaScript unit testing example running Jasmine on PhantomJS",
 	"version":     "0.0.1",
 	"type":        "library",
@@ -10,7 +10,7 @@
 		"testing",
 		"unit testing"
 	],
-	"homepage":    "https://github.com/adam-lynch/phantomjs-jasminexml-example",
+	"homepage":    "https://github.com/adam-lynch/phantomjs-jasmine-xml-example",
 	"authors":     [
 		{
 			"name":     "Adam Lynch",
@@ -28,7 +28,7 @@
 		"php": ">=5.3.3"
 	},
 	"support":     {
-		"issues": "https://github.com/adam-lynch/phantomjs-jasminexml-example/issues"
+		"issues": "https://github.com/adam-lynch/phantomjs-jasmine-xml-example/issues"
 	},
 	"bin":         [
 		"test/config/phantomjs_jasminexml_runner.js"
