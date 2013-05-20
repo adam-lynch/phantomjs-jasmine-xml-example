@@ -69,5 +69,3 @@ are not required to do anything but use and enjoy it.
 
 If, out of good will, want to put somewhere in your work a reference to this project as "inspiration", please feel free.
 But don't feel any obligation to do so.
-
-
